@@ -1,0 +1,7 @@
+<form>
+    <input type="text" [value]="inputValue" (keyup)="validateInput($event)">
+    <button type="submit" 
+    [attr.data-test-id]="testId" 
+    [disabled]="!formIsValid" 
+    (click)="save($event)">Add</button>
+</form>

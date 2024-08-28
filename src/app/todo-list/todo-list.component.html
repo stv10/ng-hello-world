@@ -1,0 +1,11 @@
+<todo-form 
+[addTask]="addTask"
+></todo-form>
+<ul>
+    @for(task of tasks; track task) {
+      <todo-list-item
+      [taskTitle]="task.title"
+      [isCompleted]="task.isCompleted"
+      ></todo-list-item>
+    }
+</ul>  
